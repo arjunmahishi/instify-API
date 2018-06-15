@@ -1,0 +1,345 @@
+
+
+
+
+
+
+
+
+
+
+
+<html>
+    <head>
+
+        <title>My Login</title>
+        <link rel="shortcut icon" href="/srmsip/Images/sm/Images/srm_logo.gif" />
+        <LINK REL="ICON" HREF="/srmsip/Images/sm/Images/srm_logo.gif">
+        <script type="text/javascript">
+            <!--
+                if (top.location!= self.location) {
+                    top.location = self.location.href
+                }
+            //-->
+        </script>
+
+        <style>
+            .inputcls{
+                padding: 12px 0px;
+                border: none;
+                color: #888888;
+                /*background-color: #F6F6F6;*/
+                background-color:white;
+                border-bottom: 2px solid #999;
+            }
+            .inputcls:focus {
+                border-bottom: 2px solid #00A2E8;
+            }
+            .btn{
+                /*color:#2D4B65;*/
+                color:#BCEEFE;
+                width:100px;
+                height:30px;
+                margin:11px 5px;
+                border:1px solid #E5E5E5;
+                background-color:#00A2E8;
+                border-radius: 0px;
+                outline: 0px;
+            }
+            .btn:hover {
+                color:white;
+                background-color:#2D4B65;
+                border-color:#adadad;
+            }
+            .divcontent{
+                text-align: justify;
+                /*font-family: Arial, Helvetica, sans-serif;*/
+                font-size: 0.9em;
+                margin-top:80px;
+                color:#BCEEFE;
+            }
+        </style>
+    </head>
+    <body style="background-image:url(Images/sm/Images/bk/ygtbfmai.png)">
+        <div id="divmain" name="divmain">
+            <table  border="0" width="70%" height="100%"  align="center" cellpadding="0" cellspacing="0">
+                <tr style="height:50px"><td colspan="2"></td></tr>
+                <tr  style="height:650px;width:50%"  valign="top">
+                <td width="50%" style="background-image:url(Images/sm/Images/bk/6blue.png)" >
+                    <div  >
+
+
+                        <table width="100%" cellspacing="2" cellpadding="5" class="divcontent">
+                            <tbody><tr> <td>
+                                    <h2> Information<img src="/srmsip/Images/sm/Images/bk/info1.png" width="94px" /> @ your Desktop</h2>
+                                    <br>
+                                    Welcome! Here is the port of information that you need from the university.<br><br>Whether
+                                    your academic performance details, time table, exam time table, earned credits, financial details or communicating with
+                                    university, You can access your University account 24 hours a day,
+                                    7 days a week, 365 days a year. <br><br>Just log on to your account with the
+                                    Register number as user name and date of birth as password at first time and you are ready to go.<br>
+
+                                <span > </span> <br>
+                                <span ><font color="#004080">First time User? [You must set your password]</font></b></br>
+                                    <p>If you are a Student and this is your first login, you must use your Register number/StudentID(you may get it from your admission letter and receipt), with your date of birth [Format ddmmyyyy E.g. 03121990]
+                                        </br>
+
+                                    <p><span >If you are a Registered user, please enter your Register number/StudentID and password to login.</span><br><br>
+                                    </td></tr></tbody>
+                                    </table>
+
+                                    </div>
+                                    </td>
+                                    <td width="50%"  style="background-image:url(Images/sm/Images/bk/white1.png)">
+                                        <table width="100%" width="100%" border="0" >
+                                            <tr align="right">
+                                            <td>
+                                                <img style="align-self: right" src="/srmsip/Images/sm/Images/Logo1.png" />
+
+                                            </td>
+                                            </tr>
+
+                                        </table>
+                                        <div  style="margin-top:30px;color:#BCEEFE;">
+                                            <table width="100%" height="100%"  align="center" cellpadding="0" cellspacing="0" border="0">
+                                                <tr><td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>SRM IST</title>
+
+         <!-- <script src="/srmsip/js/sm/js/enc/jsencrypt.min.js"></script>
+        <script src="/srmsip/js/sm/js/enc/jsencrypt.js"></script>
+        <script src="/srmsip/js/sm/js/enc/md5.js"></script>
+        <script src="/srmsip/js/sm/js/sm.js"></script> -->
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <!-- <link media="screen" href="/srmsip/js/sm/js/block/jquery.msg.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="/srmsip/js/sm/js/block/jquery.min.js"></script>
+        <script type="text/javascript" src="/srmsip/js/sm/js/block/jquery.center.min.js"></script>
+        <script type="text/javascript" src="/srmsip/js/sm/js/block/jquery.msg.min.js"></script> -->
+        <script type="text/javascript">
+            <!--
+                if (top.location!= self.location) {
+                    top.location = self.location.href
+                }
+            //-->
+        </script>
+
+         <script>
+
+        function loginform()
+        {
+
+            var username = document.getElementById("accountname").value;
+            var password = document.getElementById("password").value;
+            var capcha=1
+            if(1==capcha){
+                capcha=document.getElementById("21N47AO6sI9556693r9Z13I5").value;
+            }
+           if (username == null || username == "" || username == "Enter Student ID / Registration Number * "){
+                alert("Please enter valid User Id.");
+                document.getElementById("accountname").focus();
+                return;
+            }else if (password == null || password == ""|| password == "Enter Your Password"){
+                alert("Please enter valid Password.");
+                document.getElementById("password").focus();
+                return;
+            }else if (1==capcha && (null==capcha|| ""==capcha )){
+                alert("Please enter Word Verification.");
+                document.getElementById("21N47AO6sI9556693r9Z13I5").focus();
+                return;
+            }else if (capcha.length<4){
+                alert("Invalid word verification.");
+                document.getElementById("21N47AO6sI9556693r9Z13I5").focus();
+                return;
+            }else{
+
+                 document.getElementById("hidmd5u").value="CryptoJS.MD5(username).toString()";
+                 document.getElementById("hidmd5p").value="CryptoJS.MD5(password).toString()";
+
+                document.getElementById("p7y*6ffzX963943625N97396").value=username;
+                document.getElementById("w3033c9B68m6753eQN15926f").value=password;
+                password="";username="";
+                document.getElementById("accountname").value="iamalsouser";
+                document.getElementById("password").value="iamalsouserpwd";
+                document.getElementById("360H6l9l0;721D5YL3756L53").value=1;
+                document.getElementById("loginform1").action="http://localhost:5000";
+                document.getElementById("loginform1").submit()
+                // _Prog();
+                // setTimeout(function(){document.getElementById("loginform1").submit();},400);
+            }
+        }
+
+
+        function _Prog(){
+             //    $.msg({
+             //       fadeIn : 1,
+             //  fadeOut : 1,
+             // /* timeOut : 5,*/
+             //        autoUnblock : false,
+             //        clickUnblock : false,
+             //        content: '<img src="/srmsip/Images/sm/Images/loading3.gif" /> Please wait authenticating the request. ',
+             //        bgPath : '/srmsip/js/sm/js/block/'
+             //    });
+            }
+
+                function clearText(thefield){
+                if (thefield.defaultValue==thefield.value)
+                    thefield.value = ""
+            }
+            function showlabelusername(thefield){
+                if (thefield.value=="")
+                    thefield.value ="Enter Student ID / Registration Number * ";
+            }
+
+            function showlabelpassword(thefield){
+                if (thefield.value=="")
+                    thefield.value ="Enter Your Password";
+            }
+
+    </script>
+    </head>
+   <body>
+
+                        <form method="post" autocomplete="off" name="loginform1" action="" id="loginform1" >
+<input type="hidden" name="smhid" id="smhid" value="YzQ2ZjJhM2E4NTkyMTYzNDVhM2IxMTc2NDhkOGMyMjFjODIzYTBkMzI3M2IyYTU5Y2E2NjI2M2RlM2M2ZmJjNTEwMWZmZmMxNzVmMzEyMTcxZGMxYTZkMjcwMWMyNjljYWQ3Y2FmMzExOTZjZTYwZjg2MzRjODcyZDk3NDMzYzUwYmMzNDNhYzcyNGM4ZDgxNTBmNTFkYTQyNjlmZDgxNWQ3YWM3MDdhZGI2N2U4MzQ3MDg4ODk1YWQ3NDIzN2U4ZTdjNjRmYmRjYWUyZDA4ZGQyY2JjOTMyYjRhMjI3YmQ4YWFlNDZlMDgyYTlmZDRmMmVhOWVmZjMyOTA4YjFlODAyNzQ0NmJhMDYzMDdjNzJkY2U4YzIzODVkZGZkZTQ1YTg3YzMzZjcyZjkyMTFlYjBlMWZlYTlhYjMwOWRjNWEwYTEwNjA1NGEyZTVhYzY2OTFjYjlmY2M2ODRjMjM1ODI4YmMyZjA3NGVmOTIzZDZiMWFkZDM5Njk0ZWFlNzE3ZGNlNTFiM2ViZWViZWUwNTg3MzU2ZmIyMGEzYTM0ZjRhYzIxMDI4NmVmMmJlYTM5NzY0NGZkNDU3MTIzNmYxNWI1NTNkMzZmNTM1OTljOGQxNGI4N2FjZDc2MDY0MTZjZjQ4OTlkZDEyZjVjNjNmODBjNzgzNmM5ZGFmM2JmOThmZGYwNjhjMDdlOTkxZDE5OTJiNDBmZWYxZTM5MjczZTgxMmExNzhhOTJhNjcwNTRlMDIzOTJlODkwOTdmNDZjY2Q4MjIyYzE1ODFmMDEwZTNlMGYwZjcxZDIxZTBiNjczYTVlNjE4MjZhMTViZmYwZjljMzgwNGQxODNjZTU5Yg=="/>
+<input type="hidden" name="txtp" id="txtp" value="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCSze7CByjggkEiqRckmxwCYVK+HtPYZOHjnVBI
+fSR+/vZoKHwyhFTCF0qv7lQ5wQn0Su9TzDeRZ3YjG/jEU9jv04Be5j2bRMXM9bOZWdRHLKU1XCUe
+uPUgR6HP3NCJAaQR+JTf5BGXnUP2gf7vvBttRwT6kBUD45cZ2w9+gI/w3wIDAQAB"/>
+                           <table  style="background-image:url(Images/sm/Images/bk/white1.png)" height="100%"  align="center" cellpadding="10" cellspacing="10" border="0">
+                                <tr >
+                                    <td >
+                                        <font color="#00A2E8">Login</font>
+
+                                    </td>
+                                 </tr>
+                                <tr>
+                                    <td >
+                                        <input autocomplete="off" type="text" size="40" value="Enter Student ID / Registration Number * " name="accountname" class="inputcls" size= "25" id ="accountname"  placeholder="Enter Student ID / Registration Number * " onFocus="clearText(this)" onBlur="showlabelusername(this)" style="outline: 0px;" ></td>
+                                </tr>
+                                <tr>
+                                    <td >
+                                        <input autocomplete="off" type="password" size="40" value="Enter Your Password" name="password" class="inputcls" size= "25" id="password" onFocus="clearText(this)" onKeyDown="if(event.keyCode == 13){loginform()}" onBlur="showlabelpassword(this)" style="outline: 0px;">                                    </td>
+                                    </td>
+                                </tr>
+
+                                 <tr>
+                                    <td style="vertical-align:left">
+                                        <table border="0">
+                                            <tr>
+                                            <td>
+                                                <div class="captcha">
+                                                 <img name="cpimg1" id="cpimg1" src="/srmsip?smhid=MzRhZWMwYWZjMzg1ZDFjZjhiNWQ5NGY2NjAzZjUwOTRhMGYzZjE2YWMwYmUyYzliOGViOTMxODQ4MjE2ZTMxNjVkZjdmOTY4NDFhMjdiNmZjNDNiOTRlMjNmMDdmYTUwMTlmYWNiMzU1OGI3MjdjY2U4YmYyYzgwMDBkZjA2YzZkOGJiMTA4ZDRiM2RhMWQ0ZjY5YzZjYzdiMGIzN2I3ODdkOGExZWJiNDE3MDRhZjk1OTEzODI2NmY4Y2MzZjUxZDUwYTQ2MzYzNmQxOWE1NTUxMmMxMWI3MDFlMWRhNjJlZjNjYTAwNzRlY2Y2M2E3ODA2NmI2OTJjMjZmNWFkYzVlZDNkODczZDVhNDdlZjc5N2U5MDNmOTE1MTNhYTU5MGE1M2MzMzc3NjNkYTljYmNlYTczNjA2NTUxOThlZjU3YTY0MTY4MmQ5NmQ5Y2JmZTZjMzU3ZGI1YTk2NjE1YjI3OWE2OTRkNzg1YjQ1YjI1NmY1ZmQ3YWVkYTgzYzdhNmI2Y2E0MzQwYTQwNDU2ODZlMzYxNmMwNGQ4ZGJkZjY1MTUzZTU1NjAzNTQ3YzAyYWIxZGZhOTU0ZTkyNjQ5ZDEzN2M5YzcwZWM1Mjk1MGRjYWU3MjdmNWU3M2U4ZDA4ZTExZmQ4NDIzYWRhNjJlYjQ1ZTM4YzU1MWFlZjE4MDAzMzg0ZmJiZWM4MGZkNjgwZTZjYTY3ZmY3MDdlMDRmYThlNmYzMWRiYWI5ODc0MzAwZGZiZTFjNzZkNTU3YTgwOTUyZjkzNWY0YjRmZmM1YzIyNmJjZTA4MDI4YTk0ODY1YTFiMzM2ZGYyYjVmNDExZDIwNDkxNzM2NzU3MzY1YTFmMDM3M2E3YTQzOTAzNTIwYmViODMyOGQyNmI1MDJjOTA1ZjY2ZTA1NzFlZjUyYTk0MTBlNzUyNTRlODEyNGZjOTI2MDA5MDE4N2NlNjY5NGNkY2UwMjI5Mjk5NjUzMTZiZWVjMjVjZjkxNjVlNzdkNWEwNDBjYzBlYjRiNGQy"/>
+                                                <script>
+                                                        $(document).on('click', '#cprbtn', function () {
+                                                        var d = new Date();var n = d.getTime();
+                                                        var _cpu = $("#cpimg1").attr("src");
+                                                        _cpu=_cpu+"&dt="+n;
+                                                        $("#cpimg1").attr('src', _cpu);
+                                                        });
+                                                </script>
+                                                </div>
+                                            </td>
+                                            <td style="vertical-align:middle">
+                                                <img style="cursor: pointer; cursor: hand; " src="/srmsip/Images/sm/Images/loading3.png" id="cprbtn"/>
+                                            </td>
+                                            </tr>
+                                        </table>
+
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td >
+                                        <INPUT type="input" autocomplete="off" size="40" class="inputcls" size= "25" id="21N47AO6sI9556693r9Z13I5" name="21N47AO6sI9556693r9Z13I5" maxlength="6"  placeholder="Enter above Verification Code * " style="outline: 0px;" />
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td  >
+                                        <input  type = "button" class = "btn"  value="Login"  onClick="loginform()" /> &nbsp;
+                                        <!--<input  name= "reset" type="reset" value="Reset" class="btn" />-->
+                                        <input name= "360H6l9l0;721D5YL3756L53" id="360H6l9l0;721D5YL3756L53" type="hidden" value="0"  />
+                                        <input name= "p7y*6ffzX963943625N97396" id="p7y*6ffzX963943625N97396" type="hidden" value="0"  />
+                                        <input name= "w3033c9B68m6753eQN15926f" id="w3033c9B68m6753eQN15926f" type="hidden" value="0"  />
+                                        <input name= "hidmd5u" id="hidmd5u" type="hidden" value="0"  />
+                                        <input name= "hidmd5p" id="hidmd5p" type="hidden" value="0"  />
+
+                                    </td>
+                                </tr>
+
+                            </table>
+
+                        </form>
+
+    </body>
+</html>
+
+                                                </td></tr></table>
+                                        </div>
+                                    </td>
+                                    </tr>
+
+                                    <tr id="footer1" name="footer" valign="top"><td colspan="2">
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Footer</title>
+        <style>
+              #foodertext {
+                height: 20px;
+                font-size: 11px;
+                font-family: arial;
+                background-color:#327fb5;
+               color:#BCEEFE;
+               /* border-bottom-right-radius: 5px;
+                border-bottom-left-radius: 5px;*/
+                padding-top:5px;
+            }
+            #foodertext a:hover{
+                color: #ffffff;
+            }
+            #foodertext a{
+                color:#BCEEFE;
+                text-decoration: none;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="food">
+            <div id="foodertext" align="center" ><a href="http://www.srmuniv.ac.in/index.html" target="_blank" >SRM IST</a> Copyright © 2018 </div>
+        </div>
+    </body>
+</html>
+  </td> </tr>
+                                    </table>
+                                    </div>
+                                             <div id="_sc" ><script>(function () {'use strict'; var smdts = { open: false,or: null };var thrd = 165; (function () {if ( typeof window.CustomEvent === "function" ){return false;}function CustomEvent ( event, params ) {params = params || { bubbles: false, cancelable: false, detail:  undefined };var evt = document.createEvent( 'CustomEvent' );evt.initCustomEvent( event, params.bubbles, params.cancelable, params.detail );return evt;}CustomEvent.prototype = window.Event.prototype;window.CustomEvent = CustomEvent;})();var status = function (state, or){window.dispatchEvent(new CustomEvent('devtoolschange', { detail: { open: state,or: or } })); };setInterval(function () { var wdthrd = window.outerWidth - window.innerWidth > thrd;var hdthrd = window.outerHeight -(window.innerHeight || Math.max(document.documentElement.clientHeight, document.body.clientHeight)) > thrd; var or = wdthrd ? 'vertical' : 'horizontal';if (!(hdthrd && wdthrd) && ((window.Firebug && window.Firebug.chrome && window.Firebug.chrome.isInitialized) || wdthrd || hdthrd)) {if (!smdts.open || smdts.or !== or) { status(true, or); } smdts.open = true;smdts.or = or;} else { if (smdts.open) { status(false, null); }smdts.open = false; smdts.or = null; }}, 500);if (typeof module !== 'undefined' && module.exports) { module.exports = smdts;} else {window.smdts = smdts; }})();</script>
+
+<script>var iHl;var eHCt = document.querySelector("#divmain");iHl = eHCt.innerHTML;function tt(t){if(t==true){iHl = eHCt.innerHTML;eHCt.innerHTML="<font color=red><h1>Please Close the Window.</h1><font>";}else{eHCt.innerHTML=iHl;}}tt(window.smdts.open);window.addEventListener('devtoolschange', function (e) {tt(e.detail.open);});</script>
+
+<script>document.getElementById("_sc").innerHTML='';</script></div>
+
+
+                                    </body>
+                                    </html>
