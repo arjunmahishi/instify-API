@@ -1,11 +1,10 @@
 ### instify-api
 
 
-#### To run the script
+# To run the script
 `python erp.py <username> <password>`
 
-#### To see the output 
+# To see the output
 
     - First run `python server.py`
-    - Then `python erp.py <username> <password>`
-
+    - Visit localhost:5000 on the browser. It will automatically call erp.py and display the result
