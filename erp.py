@@ -2,9 +2,11 @@ import requests
 import re
 from bs4 import BeautifulSoup
 import hashlib
+import sys
 import pprint
 
 pp = pprint.PrettyPrinter(indent=4)
+URL_MAIN = "http://evarsity.srmuniv.ac.in/srmsip/"
 
 def stripDownJS(text):
     return text.strip()[25:49]
@@ -18,7 +20,7 @@ def getDynamicFields(session):
         "captcha": ""
     }
 
-    loginHTML = session.get("http://evarsity.srmuniv.ac.in/srmsip/").text
+    loginHTML = session.get(URL_MAIN).text
 
     soup = BeautifulSoup(loginHTML, 'html.parser')
 
@@ -43,8 +45,6 @@ def login(username, password):
     session = requests.Session()
     dynamicFields = getDynamicFields(session)
 
-    url = "http://evarsity.srmuniv.ac.in/srmsip/"
-
     payload = {
         "hidmd5u": hashlib.md5(username).hexdigest(),
         "hidmd5p": hashlib.md5(password).hexdigest(),
@@ -62,10 +62,10 @@ def login(username, password):
 
     pp.pprint(payload)
 
-    response = session.post(url, data=payload, headers=headers)
+    response = session.post(URL_MAIN, data=payload, headers=headers)
 
     return response.text
 
 
 if __name__ == "__main__":
-    login('username', 'password')
+    login(sys.argv[1], sys.argv[2])
